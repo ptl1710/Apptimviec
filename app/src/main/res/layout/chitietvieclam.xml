@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+
+        android:drawableLeft="@drawable/ic_baseline_settings_24"
+        android:id="@+id/btn4"
+        android:text="Cài đặt hiển thị"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn2"
+        android:background="@color/white"
+        android:textColor="#817D7D"
+        app:backgroundTint="@null"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"/>
+    <Button
+        app:backgroundTint="@null"
+        android:id="@+id/btn1"
+        android:background="@drawable/ic_baseline_search_24"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/btn2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        app:backgroundTint="@null"
+        android:id="@+id/btn2"
+        android:background="@drawable/ic_baseline_notifications_24"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/img1"
+        android:src="@drawable/ic_baseline_people_24"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints" />/>
+
+    <Switch
+        android:gravity="left"
+        android:id="@+id/sw1"
+        app:layout_constraintTop_toBottomOf="@id/img1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints" />/>
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/sw1"
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img"
+        tools:ignore="MissingConstraints" />/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txt3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img2"
+        app:layout_constraintLeft_toRightOf="@id/txt1"
+        android:textColor="#009662"
+        android:textSize="20dp"
+        android:background="@color/white"
+        app:backgroundTint="@null"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="xem tất cả" />
+    <TextView
+        android:id="@+id/txt1"
+        app:layout_constraintTop_toBottomOf="@id/img2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Việc làm tốt nhất"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints" />/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txt4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list1"
+        app:layout_constraintLeft_toRightOf="@id/txt2"
+        android:textColor="#009662"
+        android:textSize="20dp"
+        android:background="@color/white"
+        app:backgroundTint="@null"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="xem tất cả" />
+    <ListView
+        android:id="@+id/list1"
+        app:layout_constraintTop_toBottomOf="@id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        tools:ignore="MissingConstraints" />/>
+    <TextView
+        android:id="@+id/txt2"
+        app:layout_constraintTop_toBottomOf="@id/list1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Việc làm hấp dẫn"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints" />/>
+    <ListView
+        android:id="@+id/list2"
+        app:layout_constraintTop_toBottomOf="@id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        tools:ignore="MissingConstraints" />/>
+
+    <Button
+        app:backgroundTint="@null"
+        android:background="@drawable/ic_baseline_location_on_24"
+        android:id="@+id/btn3"
+        app:layout_constraintBottom_toBottomOf="@id/list2"
+        app:layout_constraintRight_toRightOf="@id/list2"
+        android:layout_marginRight="25dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

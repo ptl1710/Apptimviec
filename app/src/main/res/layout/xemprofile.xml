@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+        <ImageView
+            android:id="@+id/img1"
+            android:background="@drawable/nen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+
+        <ImageButton
+            android:id="@+id/img2"
+            app:layout_constraintRight_toRightOf="@id/img1"
+            app:layout_constraintLeft_toLeftOf="@id/img1"
+            app:layout_constraintBottom_toBottomOf="@id/img1"
+            app:layout_constraintTop_toTopOf="@id/img1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_1"
+            app:backgroundTint="@null"
+            android:layout_width="130dp"
+            android:layout_height="130dp"/>
+
+        <EditText
+            android:id="@+id/edt2"
+            android:gravity="center"
+            android:text="Hồ Thị Thu Hợp \n Chưa cập nhật vị trí công việc"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/img2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            app:layout_constraintTop_toBottomOf="@id/edt2"
+
+            android:gravity="center"
+            android:hint="Chưa cập nhật công ty"
+            app:layout_constraintBottom_toBottomOf="@id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/img1"
+            android:id="@+id/edt1"
+            android:textStyle="italic"
+            android:hint="Chưa cập nhật giới thiệu bản thân"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
